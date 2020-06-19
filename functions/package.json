@@ -1,0 +1,26 @@
+{
+  "name": "functions",
+  "scripts": {
+    "dev": "webpack --mode development && firebase serve --only functions",
+    "deploy": "webpack --mode production && firebase deploy --only functions"
+  },
+  "devDependencies": {
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.12.1",
+    "firebase-functions": "^3.7.0",
+    "helmet": "^3.23.1"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "private": true
+}
